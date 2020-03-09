@@ -1,0 +1,23 @@
+.criminal {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    max-width: 15%;
+    margin: 15px;
+    padding: 5px;
+    justify-content: space-evenly;
+}
+
+.criminalsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4%;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.criminal_text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
