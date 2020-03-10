@@ -1,5 +1,5 @@
-export const CriminalsCollection = (criminal) => {
-    console.log("if you see this message, you got the criminal")
+export const criminalsCollection = (criminal) => {
+    console.log("ALL CRIMINALS HAVE BEEN RENDERED")
     return `
         <section class="criminal">
             <h3 class="criminal__header">${criminal.name}</h3>
@@ -12,4 +12,4 @@ export const CriminalsCollection = (criminal) => {
             </section>
     `
 }
-export default CriminalsCollection
+export default criminalsCollection
