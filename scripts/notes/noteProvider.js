@@ -2,27 +2,38 @@ const eventHub = document.querySelector(".container")
 
 const dispatchStateChangeEvent = () => {
     const noteStateChangedEvent = new CustomEvent("noteStateChanged")
-    
+
     eventHub.dispatchEvent(noteStateChangedEvent)
 }
 
-const getNotes = () => {
-    fetch('http://localhost:8088/notes')
-    .then(response => response.json())
-    .then(parsedNotes => {
-        notes = parsedNotes
-    })
+let notes = []
+
+export const useNotes = () => {
+  return notes
 }
 
+export const getNotes = () => {
+  return fetch('http://localhost:8088/notes')
+    .then(response => response.json())
+    .then(
+      note => {
+        notes = note.slice()
+        console.log("all of my notes", notes)
+      }
+    )
+}
+
+
 export const saveNote = note => {
-    fetch('http://localhost:8088/notes', {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(note)
-    })
+  return fetch('http://localhost:8088/notes', {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(note)
+  })
     .then(getNotes)
     .then(dispatchStateChangeEvent)
 }
-    
+
+
