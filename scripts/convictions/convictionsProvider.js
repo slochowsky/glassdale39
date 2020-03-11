@@ -9,7 +9,7 @@ export const getConvictions = () => {
         .then(response => response.json())
         .then(parsedConvictions => {
             convictions = parsedConvictions
-            console.log(convictions)
+            console.log("data after getConvictions fetch call",convictions)
             }
         )
 }

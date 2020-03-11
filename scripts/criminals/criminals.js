@@ -1,5 +1,5 @@
 export const criminalsCollection = (criminal) => {
-    console.log("ALL CRIMINALS HAVE BEEN RENDERED")
+    console.warn("ALL CRIMINALS HAVE BEEN RENDERED")
     return `
         <section class="criminal">
             <h3 class="criminal__header">${criminal.name}</h3>

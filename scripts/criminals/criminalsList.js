@@ -10,10 +10,10 @@ const criminalList = () => {
     eventHub.addEventListener("crimeSelected", event => {
         const crimeid = event.detail.crime
         const matchingCriminals = criminalArray.filter(
-            (crime) => {
+            crime => {
                 if (crime.conviction === crimeid) {
-                    return criminalArray
-                }
+                   return true
+                }return false
             }
         )
         render(matchingCriminals)

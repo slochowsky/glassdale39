@@ -3,7 +3,6 @@ import { useConvictions } from "./convictionsProvider.js"
 const eventHub = document.querySelector(".container")
 const contentTarget = document.querySelector(".filters__crime")
 
-
 const convictionSelect = () => {
     const convictions = useConvictions()
 
@@ -18,19 +17,21 @@ const convictionSelect = () => {
             eventHub.dispatchEvent(message)
         }
     })
-// this function has no data being passed to it untill the the function "render is
+// this function has no data being passed to it untill the the function "render" is
 // being invoked and then passed in the array in the paramaters called "convictions".
     const render = convictionsCollection => {
         contentTarget.innerHTML = `
+        <div class="dropdownContainer">
             <select class="dropdown" id="crimeSelect">
+            <div class="dropdown-content">
                 <option value="0">Please select a crime...</option>
                 ${convictionsCollection.map(selectedConviction => {
             return `<option value="${selectedConviction.name}">${selectedConviction.name}</option>`
-        })}
-        </select>`
+        })}</div>
+        </select>
+        </div>`
     }
     render(convictions)
 }
-
 
 export default convictionSelect
