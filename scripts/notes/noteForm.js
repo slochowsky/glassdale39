@@ -11,11 +11,12 @@ const NoteFormComponent = () => {
         const newNote = {
             text: document.querySelector('#note-text').value,
             date: new Date(Date.now()).toLocaleDateString('en-US'),
-            suspect: document.querySelector('#note-suspect').value,
+            suspect: document.querySelector('#note-suspect').value
         }
 
         // Change API state and application state
         saveNote(newNote)
+        console.log("new note that was saved", newNote)
        
     }
 })
