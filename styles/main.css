@@ -44,3 +44,30 @@
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
+
+.NoteForm {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#saveNote {
+    color: lightskyblue;
+    background: rgb(37, 62, 71);
+}
+
+#note-text {
+    background: lightskyblue;
+}
+
+#note-date {
+    background: lightskyblue;
+}
+
+#note-suspect {
+    background: lightskyblue;
+}

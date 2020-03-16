@@ -20,9 +20,8 @@ const criminalList = () => {
     })
 
     const render = crimeCollections => {
-        contentTarget.innerHTML = `
-          ${crimeCollections.map(
-                (criminal) => {
+        contentTarget.innerHTML = `${crimeCollections.map(
+            (criminal) => {
                     return criminalsCollection(criminal)
                 }
             ).join("")
@@ -31,5 +30,20 @@ const criminalList = () => {
     }
     render(criminalArray)
 }
+
+        eventHub.addEventListener("click", clickEvent => {
+    if (clickEvent.target.id.startsWith("associates--")) {
+
+        const [prefix, id] = clickEvent.target.id.split("--")
+
+      const message = new CustomEvent("associateAlibisButtonClicked", {
+
+        detail: {
+            criminalId: id
+        }
+      })
+      eventHub.dispatchEvent(message)
+    }
+  })
 
 export default criminalList

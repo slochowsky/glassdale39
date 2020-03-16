@@ -1,4 +1,4 @@
-import { saveNote } from "./noteProvider.js"
+import { saveNote, getNotes } from "./noteProvider.js"
 
 const eventHub = document.querySelector(".container")
 const contentTarget = document.querySelector(".noteFormContainer")
@@ -24,18 +24,18 @@ const NoteFormComponent = () => {
 const render = () => {
     contentTarget.innerHTML = `
         <div class="NoteForm">
+   
+        <label for="note-text"></label>
+        <input type="text" id="note-text" placeholder="Description of note....">
 
-        <label for="note-text">Notes:</label>
-        <input type="text" id="note-text" placeholder="Enter text">
+        <label for="note-date"></label>
+        <input type="date" id="note-date" placeholder="">
 
-        <label for="note-date">Date:</label>
-        <input type="date" id="note-date" placeholder="select date">
-
-        <label for="note-suspect">Suspect:</label>
-        <input type="text" id="note-suspect" placeholder="Enter suspect">
-
+        <label for="note-suspect"></label>
+        <input type="text" id="note-suspect" placeholder="Enter suspect name here...">
+        
         <button id="saveNote">Save Note</button>
-
+            
         </div>
     `
 }
