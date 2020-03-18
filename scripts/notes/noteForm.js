@@ -1,16 +1,28 @@
-import { saveNote, getNotes } from "./noteProvider.js"
+import { saveNote } from "./noteProvider.js"
 
 const eventHub = document.querySelector(".container")
 const contentTarget = document.querySelector(".noteFormContainer")
 
-const NoteFormComponent = () => {
+
+let visibility = false
+
+eventHub.addEventListener("noteFormButtonClicked", customEvent => {
+    visibility = !visibility
+
+    if (visibility) {
+        contentTarget.classList.remove("invisible")
+    }
+    else {
+        contentTarget.classList.add("invisible")
+    }
+})
     
-   eventHub.addEventListener("click", clickEvent => {
+   contentTarget.addEventListener("click", clickEvent => {
      if (clickEvent.target.id === "saveNote") {
 
         const newNote = {
             text: document.querySelector('#note-text').value,
-            date: new Date(Date.now()).toLocaleDateString('en-US'),
+            date: document.querySelector('#note-date').value,
             suspect: document.querySelector('#note-suspect').value
         }
 
@@ -22,6 +34,7 @@ const NoteFormComponent = () => {
 })
 
 const render = () => {
+    contentTarget.classList.add("invisible")
     contentTarget.innerHTML = `
         <div class="NoteForm">
    
@@ -39,8 +52,10 @@ const render = () => {
         </div>
     `
 }
-render()
+
+
+const noteFormComponent = () => {
+    render()
 }
 
-
-export default NoteFormComponent
+export default noteFormComponent

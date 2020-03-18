@@ -71,3 +71,18 @@
 #note-suspect {
     background: lightskyblue;
 }
+
+.invisible {
+    display:none;
+}
+
+.noteCard {
+    border: 2px solid black;
+    width: 20%;
+}
+
+.notesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

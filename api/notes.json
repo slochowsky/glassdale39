@@ -1,45 +1,45 @@
 {
   "notes": [
     {
-      "noteText": "Needs rehab",
-      "noteDate": "12/11/2019",
-      "noteSuspect": "John Doe",
+      "text": "Needs rehab",
+      "date": "12/11/2019",
+      "suspect": "John Doe",
       "id": 1
     },
     {
-      "noteText": "Been flappin its wings for 10 years",
-      "noteDate": "12/11/2019",
-      "noteSuspect": "Flappy Bird",
+      "text": "Been flappin its wings for 10 years",
+      "date": "12/11/2019",
+      "suspect": "Flappy Bird",
       "id": 2
     },
     {
-      "noteText": "No regard to human life",
-      "noteDate": "12/11/2019",
-      "noteSuspect": "Willson Goob",
+      "text": "No regard to human life",
+      "date": "12/11/2019",
+      "suspect": "Willson Goob",
       "id": 3
     },
     {
-      "noteText": "Buddies with Jimmy John's",
-      "noteDate": "12/11/2019",
-      "noteSuspect": "Johnny John",
+      "text": "Buddies with Jimmy John's",
+      "date": "12/11/2019",
+      "suspect": "Johnny John",
       "id": 4
     },
     {
-      "noteText": "Conspiracy to commit on GitHub",
-      "noteDate": "12/11/2019",
-      "noteSuspect": "Timmy Turner",
+      "text": "Conspiracy to commit on GitHub",
+      "date": "12/11/2019",
+      "suspect": "Timmy Turner",
       "id": 5
     },
     {
-      "noteText": "Keep and eye on this guy",
-      "noteDate": "12/11/2019",
-      "noteSuspect": "Greg Wilson",
+      "text": "Keep and eye on this guy",
+      "date": "12/11/2019",
+      "suspect": "Greg Wilson",
       "id": 6
     },
     {
-      "noteText": "Chicken Noodle has been dealing drugs since he was 4 years old.",
-      "noteDate": "12/11/2019",
-      "noteSuspect": "Chicken Noodle",
+      "text": "Chicken Noodle has been dealing drugs since he was 4 years old.",
+      "date": "12/11/2019",
+      "suspect": "Chicken Noodle",
       "id": 7
     },
     {
@@ -59,144 +59,6 @@
       "date": "3/11/2020",
       "suspect": "did i just make a new note?",
       "id": 11
-    },
-    {
-      "text": "",
-      "date": "3/12/2020",
-      "suspect": "",
-      "id": 12
-    },
-    {
-      "text": "",
-      "date": "3/12/2020",
-      "suspect": "",
-      "id": 13
-    },
-    {
-      "text": "",
-      "date": "3/12/2020",
-      "suspect": "",
-      "id": 14
-    },
-    {
-      "text": "hello",
-      "date": "3/12/2020",
-      "suspect": "tom",
-      "id": 15
-    },
-    {
-      "text": "",
-      "date": "3/12/2020",
-      "suspect": "",
-      "id": 16
-    },
-    {
-      "text": "",
-      "date": "3/12/2020",
-      "suspect": "",
-      "id": 17
-    },
-    {
-      "text": "",
-      "date": "3/12/2020",
-      "suspect": "",
-      "id": 18
-    },
-    {
-      "text": "",
-      "date": "3/12/2020",
-      "suspect": "",
-      "id": 19
-    },
-    {
-      "text": "",
-      "date": "3/16/2020",
-      "suspect": "",
-      "id": 20
-    },
-    {
-      "text": "",
-      "date": "3/16/2020",
-      "suspect": "",
-      "id": 21
-    },
-    {
-      "text": "",
-      "date": "3/16/2020",
-      "suspect": "",
-      "id": 22
-    },
-    {
-      "text": "",
-      "date": "3/16/2020",
-      "suspect": "",
-      "id": 23
-    },
-    {
-      "text": "",
-      "date": "3/16/2020",
-      "suspect": "",
-      "id": 24
-    },
-    {
-      "text": "",
-      "date": "3/16/2020",
-      "suspect": "",
-      "id": 25
-    },
-    {
-      "text": "",
-      "date": "3/16/2020",
-      "suspect": "",
-      "id": 26
-    },
-    {
-      "text": "",
-      "date": "3/16/2020",
-      "suspect": "",
-      "id": 27
-    },
-    {
-      "text": "",
-      "date": 1584384749492,
-      "suspect": "",
-      "id": 28
-    },
-    {
-      "text": "",
-      "date": 1584384766724,
-      "suspect": "",
-      "id": 29
-    },
-    {
-      "text": "",
-      "date": "3/16/2020",
-      "suspect": "",
-      "id": 30
-    },
-    {
-      "text": "",
-      "date": "3/16/2020",
-      "suspect": "",
-      "id": 31
-    },
-    {
-      "text": "",
-      "date": "3/16/2020",
-      "suspect": "",
-      "id": 32
-    },
-    {
-      "text": "fdgdfg",
-      "date": "3/16/2020",
-      "suspect": "sdfsdfsdf",
-      "id": 33
-    },
-    {
-      "text": "",
-      "date": "3/16/2020",
-      "suspect": "",
-      "id": 34
     }
   ]
 }
