@@ -12,8 +12,8 @@ const criminalList = () => {
         const matchingCriminals = criminalArray.filter(
             crime => {
                 if (crime.conviction === crimeid) {
-                   return true
-                }return false
+                    return true
+                } return false
             }
         )
         render(matchingCriminals)
@@ -22,28 +22,28 @@ const criminalList = () => {
     const render = crimeCollections => {
         contentTarget.innerHTML = `${crimeCollections.map(
             (criminal) => {
-                    return criminalsCollection(criminal)
-                }
-            ).join("")
+                return criminalsCollection(criminal)
+            }
+        ).join("")
             }
               `
     }
     render(criminalArray)
 }
 
-        contentTarget.addEventListener("click", clickEvent => {
+eventHub.addEventListener("click", clickEvent => {
     if (clickEvent.target.id.startsWith("associates--")) {
 
         const [prefix, id] = clickEvent.target.id.split("--")
 
-      const message = new CustomEvent("associateAlibisButtonClicked", {
+        const message = new CustomEvent("associateAlibisButtonClicked", {
 
-        detail: {
-            criminalId: id
-        }
-      })
-      eventHub.dispatchEvent(message)
+            detail: {
+                criminalId: id
+            }
+        })
+        eventHub.dispatchEvent(message)
     }
-  })
+})
 
 export default criminalList

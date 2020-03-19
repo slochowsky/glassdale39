@@ -8,9 +8,15 @@ const dialogComponent = () => {
     eventHub.addEventListener("associateAlibisButtonClicked", event => {
         const criminals = useCriminals()
         console.log(event.detail.criminalId)
+
+        const criminalid = event.detail.criminalId
+
         const foundCriminal = criminals.find(
             (singleCriminal) => {
-                return singleCriminal.id === parseInt(criminalId)
+                if (singleCriminal.id === parseInt(criminalid)) {
+                    return true
+                }
+                return false
             }
         )
         const alibisHTML = foundCriminal.known_associates.map(
@@ -51,4 +57,4 @@ const dialogComponent = () => {
     }
 }
 
-export default dialogComponent
+export default dialogComponent 
