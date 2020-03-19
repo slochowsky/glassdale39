@@ -10,7 +10,7 @@ const dialogComponent = () => {
         console.log(event.detail.criminalId)
         const foundCriminal = criminals.find(
             (singleCriminal) => {
-                return singleCriminal.id === parseInt(event.detail.criminalId, 10)
+                return singleCriminal.id === parseInt(criminalId)
             }
         )
         const alibisHTML = foundCriminal.known_associates.map(

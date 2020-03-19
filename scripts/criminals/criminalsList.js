@@ -31,7 +31,7 @@ const criminalList = () => {
     render(criminalArray)
 }
 
-        eventHub.addEventListener("click", clickEvent => {
+        contentTarget.addEventListener("click", clickEvent => {
     if (clickEvent.target.id.startsWith("associates--")) {
 
         const [prefix, id] = clickEvent.target.id.split("--")
