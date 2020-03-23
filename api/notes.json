@@ -1,76 +1,32 @@
 {
   "notes": [
     {
-      "text": "Needs rehab",
-      "date": "12/11/2019",
-      "suspect": "John Doe",
-      "id": 1
+      "text": "hah",
+      "date": "2222-12-22",
+      "suspect": "Rogelio Hills",
+      "id": 1,
+      "criminalId": 60
     },
     {
-      "text": "Been flappin its wings for 10 years",
-      "date": "12/11/2019",
-      "suspect": "Flappy Bird",
-      "id": 2
+      "text": "hah",
+      "date": "2222-12-22",
+      "suspect": "Rogelio Hills",
+      "id": 1,
+      "criminalId": 29
     },
     {
-      "text": "No regard to human life",
-      "date": "12/11/2019",
-      "suspect": "Willson Goob",
-      "id": 3
-    },
-    {
-      "text": "Buddies with Jimmy John's",
-      "date": "12/11/2019",
-      "suspect": "Johnny John",
-      "id": 4
-    },
-    {
-      "text": "Conspiracy to commit on GitHub",
-      "date": "12/11/2019",
-      "suspect": "Timmy Turner",
-      "id": 5
-    },
-    {
-      "text": "Keep and eye on this guy",
-      "date": "12/11/2019",
-      "suspect": "Greg Wilson",
-      "id": 6
-    },
-    {
-      "text": "Chicken Noodle has been dealing drugs since he was 4 years old.",
-      "date": "12/11/2019",
-      "suspect": "Chicken Noodle",
-      "id": 7
-    },
-    {
-      "text": "test",
-      "date": "3/11/2020",
-      "suspect": "test",
-      "id": 9
-    },
-    {
-      "text": "new note?",
-      "date": "3/11/2020",
-      "suspect": "did i just make a new note?",
-      "id": 10
-    },
-    {
-      "text": "new note?",
-      "date": "3/11/2020",
-      "suspect": "did i just make a new note?",
-      "id": 11
-    },
-    {
-      "text": "",
-      "date": "",
+      "text": "hah",
+      "date": "2222-12-22",
       "suspect": "",
-      "id": 12
+      "id": 1,
+      "criminalId": 31
     },
     {
-      "text": "",
-      "date": "",
-      "suspect": "",
-      "id": 13
+      "text": "hah",
+      "date": "2222-12-22",
+      "suspect": "Rogelio Hills",
+      "id": 1,
+      "criminalId": 30
     }
   ]
 }

@@ -2,6 +2,8 @@ import { saveNote } from "./noteProvider.js"
 
 const eventHub = document.querySelector(".container")
 const contentTarget = document.querySelector(".noteFormContainer")
+const witnessButtonTarget = document.querySelector(".witnessButtonContainer")
+
 
 
 let visibility = false
@@ -16,9 +18,9 @@ eventHub.addEventListener("noteFormButtonClicked", customEvent => {
         contentTarget.classList.add("invisible")
     }
 })
-    
-   contentTarget.addEventListener("click", clickEvent => {
-     if (clickEvent.target.id === "saveNote") {
+
+contentTarget.addEventListener("click", clickEvent => {
+    if (clickEvent.target.id === "saveNote") {
 
         const newNote = {
             text: document.querySelector('#note-text').value,
@@ -29,7 +31,7 @@ eventHub.addEventListener("noteFormButtonClicked", customEvent => {
         // Change API state and application state
         saveNote(newNote)
         console.log("new note that was saved", newNote)
-       
+
     }
 })
 
@@ -48,8 +50,10 @@ const render = () => {
         <input type="text" id="note-suspect" placeholder="Enter suspect name here...">
         
         <button id="saveNote">Save Note</button>
-            
-        </div>
+        </div>`
+    // target another DOM NODE for this button id when button clicked
+    witnessButtonTarget.innerHTML = `
+        <div><button id="witnessStatements">Witness Statements</button>
     `
 }
 

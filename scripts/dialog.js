@@ -35,16 +35,13 @@ const dialogComponent = () => {
         contentTarget.innerHTML = `
             <dialog class="alibies">
             <div class="alibiText"></div>
-            <button id="closeDialog">close</button>
+            <button class="closeDialog">close</button>
             </dialog>
             `
     }
     alibiHTMLRep()
 
-
-    // this loop allows the closing of a button on any one criminal that is selected
-
-    const allCloseButtons = document.querySelectorAll("#closeDialog")
+    const allCloseButtons = document.querySelectorAll(".closeDialog")
 
     for (const btn of allCloseButtons) {
         btn.addEventListener(

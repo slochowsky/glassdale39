@@ -1,26 +1,48 @@
-.criminal {
-    display: flex;
-    flex-wrap: wrap;
-    border: 2px solid black;
-    max-width: 15%;
-    margin: 15px;
-    padding: 5px;
-    justify-content: space-evenly;
+body {
+    background: darkgrey;
 }
 
+.header {
+    font-size: xx-large;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.listsContainer {
+    display: flex;
+    flex-flow: row nowrap;
+
+}
 .criminalsContainer {
     display: flex;
     flex-wrap: wrap;
-    margin: 4%;
-    justify-content: space-between;
+    justify-content: space-around;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  }
+  
+  .criminalCard {
+    border: 1px solid black;
+    flex-basis: 30%;
+    margin-bottom: 10px;
+    padding: 0px 5px 10px 10px;
+    border-radius: 7px;
+    box-shadow: 5px 8px 10px #000000
+  }
+  
+  .criminalName {
+    font-weight: bold;
+    margin: 0px -5px -3px -10px;
+    background-color: skyblue;
     text-align: center;
-}
-
-.criminal_text {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    padding: 4px 0px;
+    background-clip: border-box;
+  }
+  
+  .criminalCrime {
+    text-transform: capitalize;
+  }
 
 .dropdownContainer {
     position: relative;
@@ -55,6 +77,16 @@
     flex-wrap: wrap;
 }
 
+#showAllNotes {
+    background: rgb(54, 54, 54);
+    color: skyblue;
+}
+
+#showNoteForm {
+    background: rgb(54, 54, 54);
+    color: skyblue;
+}
+
 #saveNote {
     color: lightskyblue;
     background: rgb(37, 62, 71);
@@ -76,13 +108,85 @@
     display:none;
 }
 
-.noteCard {
-    border: 2px solid black;
-    width: 20%;
-}
-
 .notesContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    height: 40%;
+    margin: 2%;
 }
+
+#witnessStatements {
+    background: rgb(54, 54, 54);
+    color: skyblue;
+
+  }
+  
+.witnessCard {
+    border: 1px solid black;
+    flex-basis: 30%;
+    margin-bottom: 10px;
+    padding: 0px 5px 10px 10px;
+    border-radius: 7px;
+    box-shadow: 5px 8px 10px #000000;
+    background-clip: border-box;
+  }
+
+.witness_Name {
+    font-weight: bold;
+    margin: 0px -5px -3px -10px;
+    background-color: skyblue;
+    text-align: center;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    padding: 4px 0px;
+    background-clip: border-box;
+  }
+
+  .witness_Statement {
+    margin: 0px -5px -3px -10px;
+    text-align: center;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    padding: 4px 0px;
+    background-clip: border-box;
+  }
+
+  .notesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .noteCard {
+    margin: 0px;
+    flex-basis: 20%;
+    max-height: 4%;
+    border: 1px solid black;
+    padding: 0px 5px 10px 10px;
+    border-radius: 7px;
+    box-shadow: 5px 8px 10px #000000
+  }
+  
+  .noteHeader {
+    font-weight: bold;
+    margin: 0px -5px -3px -10px;
+    background-color: skyblue;
+    text-align: center;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    padding: 4px 0px;
+    background-clip: border-box;
+  }
+  
+  .noteText {
+    margin: 9px 0px;
+  }
+  
+  .noteDate {
+    margin: 9px 0px;
+  }
+
+  .invisible {
+      display: none;
+  }

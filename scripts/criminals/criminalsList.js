@@ -46,4 +46,12 @@ eventHub.addEventListener("click", clickEvent => {
     }
 })
 
+
+eventHub.addEventListener("click", e => {
+    if (e.target.id === "showAllCriminals") {
+        render(criminalArray)
+    }
+})
+
+
 export default criminalList

@@ -7,17 +7,14 @@ import dialogComponent from "./dialog.js"
 import { DisplayNoteFormButton } from "./notes/displayNoteFormButon.js"
 import "./notes/noteList.js"
 import { DisplayNotesButton } from "./notes/displayNotesButton.js"
+import WitnessListComponent from "./witness/witnessList.js"
+import { getWitnesses } from "./witness/witnessProvider.js"
 
+getWitnesses().then(WitnessListComponent)
 
+getConvictions().then(convictionSelect)
 
-
-getConvictions().then(
-    () => convictionSelect()
-)
-
-getCriminals().then(
-    () => criminalList()
-)
+getCriminals().then(criminalList)
 
 dialogComponent()
 DisplayNotesButton()
