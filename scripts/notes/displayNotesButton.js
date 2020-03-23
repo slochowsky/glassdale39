@@ -16,7 +16,3 @@ export const DisplayNotesButton = () => {
     contentTarget.innerHTML = "<button id='showAllNotes'>Show All Notes</button>"
 
 }
-
-export const DisplayWitnessStatementsButton = () => {
-    contentTarget.innerHTML = "<button id='witnessStatements'>Witness Statements</button>"
-}

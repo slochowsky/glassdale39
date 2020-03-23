@@ -9,6 +9,7 @@ import "./notes/noteList.js"
 import { DisplayNotesButton } from "./notes/displayNotesButton.js"
 import WitnessListComponent from "./witness/witnessList.js"
 import { getWitnesses } from "./witness/witnessProvider.js"
+import { WitnessStatementButton } from "./witness/WitnessButton.js"
 
 getWitnesses().then(WitnessListComponent)
 
@@ -20,3 +21,4 @@ dialogComponent()
 DisplayNotesButton()
 DisplayNoteFormButton()
 noteFormComponent()
+WitnessStatementButton()

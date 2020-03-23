@@ -2,7 +2,6 @@ import { saveNote } from "./noteProvider.js"
 
 const eventHub = document.querySelector(".container")
 const contentTarget = document.querySelector(".noteFormContainer")
-const witnessButtonTarget = document.querySelector(".witnessButtonContainer")
 
 
 
@@ -51,10 +50,7 @@ const render = () => {
         
         <button id="saveNote">Save Note</button>
         </div>`
-    // target another DOM NODE for this button id when button clicked
-    witnessButtonTarget.innerHTML = `
-        <div><button id="witnessStatements">Witness Statements</button>
-    `
+
 }
 
 
