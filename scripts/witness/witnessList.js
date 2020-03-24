@@ -3,7 +3,7 @@ import { WitnessComponent } from "./Witness.js"
 
 
 const eventHub = document.querySelector(".container")
-const contentTarget = document.querySelector(".witnessContainer")
+const contentTarget = document.querySelector(".criminalsContainer")
 
 const WitnessListComponent = () => {
     const witnessesArray = useWitnesses()
