@@ -1,7 +1,9 @@
-export const noteComponent = (note, accurateCriminal) => {
+export const noteComponent = (note, criminal) => {
   return `
     <div class="noteCard">
-    <h4 class="noteHeader">${accurateCriminal.name}</h4>
+    <header>
+    <h2>${criminal.name}</h2>
+    </header>
     <p class="noteDate">${note.date}</p>
     <p class="noteText">${note.text}</p>
     <button id="deleteNote--${note.id}">Delete</button>

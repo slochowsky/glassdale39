@@ -1,32 +1,16 @@
 {
   "notes": [
     {
-      "text": "hah",
-      "date": "2222-12-22",
-      "suspect": "Rogelio Hills",
-      "id": 1,
-      "criminalId": 60
+      "text": "",
+      "date": "",
+      "criminal": 9,
+      "id": 1
     },
     {
-      "text": "hah",
-      "date": "2222-12-22",
-      "suspect": "Rogelio Hills",
-      "id": 1,
-      "criminalId": 29
-    },
-    {
-      "text": "hah",
-      "date": "2222-12-22",
-      "suspect": "",
-      "id": 1,
-      "criminalId": 31
-    },
-    {
-      "text": "hah",
-      "date": "2222-12-22",
-      "suspect": "Rogelio Hills",
-      "id": 1,
-      "criminalId": 30
+      "text": "gill",
+      "date": "0111-11-11",
+      "criminal": 9,
+      "id": 2
     }
   ]
 }

@@ -1,4 +1,6 @@
 import { saveNote } from "./noteProvider.js"
+import { useCriminals } from "../criminals/criminalsProvider.js"
+
 
 const eventHub = document.querySelector(".container")
 const contentTarget = document.querySelector(".noteFormContainer")
@@ -20,11 +22,15 @@ eventHub.addEventListener("noteFormButtonClicked", customEvent => {
 
 contentTarget.addEventListener("click", clickEvent => {
     if (clickEvent.target.id === "saveNote") {
+        
+  const text = document.querySelector('#note-text').value
+  const date = document.querySelector('#note-date').value
+  const criminalId = document.querySelector('#criminalDropdown').value
 
         const newNote = {
-            text: document.querySelector('#note-text').value,
-            date: document.querySelector('#note-date').value,
-            suspect: document.querySelector('#note-suspect').value
+            text: text,
+            date: date,
+            criminal: parseInt(criminalId)
         }
 
         // Change API state and application state
@@ -36,6 +42,7 @@ contentTarget.addEventListener("click", clickEvent => {
 
 const render = () => {
     contentTarget.classList.add("invisible")
+    const allCriminals = useCriminals()
     contentTarget.innerHTML = `
         <div class="NoteForm">
    
@@ -46,16 +53,22 @@ const render = () => {
         <input type="date" id="note-date" placeholder="">
 
         <label for="note-suspect"></label>
-        <input type="text" id="note-suspect" placeholder="Enter suspect name here...">
-        
+        <select id="criminalDropdown">
+        <option value="0">Please choose a criminal...</option>
+        ${allCriminals.map(
+                (currentCriminalObject) => {
+                    return `<option value="${currentCriminalObject.id}">${currentCriminalObject.name}</option>`
+                }
+            )
+        }
+        </select>
         <button id="saveNote">Save Note</button>
         </div>`
 
 }
 
 
-const noteFormComponent = () => {
+export const noteFormComponent = () => {
     render()
 }
 
-export default noteFormComponent
